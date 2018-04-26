@@ -1,0 +1,10 @@
+small,0
+medium,1
+large,2
+red,3
+yellow,4
+green,5
+blue,6
+circle,7
+square,8
+triangle,9
