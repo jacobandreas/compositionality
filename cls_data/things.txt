@@ -1,36 +1,300 @@
-(small red circle),0 3 7
-(small red square),0 3 8
-(small red triangle),0 3 9
-(small yellow circle),0 4 7
-(small yellow square),0 4 8
-(small yellow triangle),0 4 9
-(small green circle),0 5 7
-(small green square),0 5 8
-(small green triangle),0 5 9
-(small blue circle),0 6 7
-(small blue square),0 6 8
-(small blue triangle),0 6 9
-(medium red circle),1 3 7
-(medium red square),1 3 8
-(medium red triangle),1 3 9
-(medium yellow circle),1 4 7
-(medium yellow square),1 4 8
-(medium yellow triangle),1 4 9
-(medium green circle),1 5 7
-(medium green square),1 5 8
-(medium green triangle),1 5 9
-(medium blue circle),1 6 7
-(medium blue square),1 6 8
-(medium blue triangle),1 6 9
-(large red circle),2 3 7
-(large red square),2 3 8
-(large red triangle),2 3 9
-(large yellow circle),2 4 7
-(large yellow square),2 4 8
-(large yellow triangle),2 4 9
-(large green circle),2 5 7
-(large green square),2 5 8
-(large green triangle),2 5 9
-(large blue circle),2 6 7
-(large blue square),2 6 8
-(large blue triangle),2 6 9
+(small red circle top),0 3 8 12
+(small red circle middle),0 3 8 13
+(small red circle bottom),0 3 8 14
+(small red circle left),0 3 8 15
+(small red circle right),0 3 8 16
+(small red square top),0 3 9 12
+(small red square middle),0 3 9 13
+(small red square bottom),0 3 9 14
+(small red square left),0 3 9 15
+(small red square right),0 3 9 16
+(small red triangle top),0 3 10 12
+(small red triangle middle),0 3 10 13
+(small red triangle bottom),0 3 10 14
+(small red triangle left),0 3 10 15
+(small red triangle right),0 3 10 16
+(small red pentagon top),0 3 11 12
+(small red pentagon middle),0 3 11 13
+(small red pentagon bottom),0 3 11 14
+(small red pentagon left),0 3 11 15
+(small red pentagon right),0 3 11 16
+(small orange circle top),0 4 8 12
+(small orange circle middle),0 4 8 13
+(small orange circle bottom),0 4 8 14
+(small orange circle left),0 4 8 15
+(small orange circle right),0 4 8 16
+(small orange square top),0 4 9 12
+(small orange square middle),0 4 9 13
+(small orange square bottom),0 4 9 14
+(small orange square left),0 4 9 15
+(small orange square right),0 4 9 16
+(small orange triangle top),0 4 10 12
+(small orange triangle middle),0 4 10 13
+(small orange triangle bottom),0 4 10 14
+(small orange triangle left),0 4 10 15
+(small orange triangle right),0 4 10 16
+(small orange pentagon top),0 4 11 12
+(small orange pentagon middle),0 4 11 13
+(small orange pentagon bottom),0 4 11 14
+(small orange pentagon left),0 4 11 15
+(small orange pentagon right),0 4 11 16
+(small yellow circle top),0 5 8 12
+(small yellow circle middle),0 5 8 13
+(small yellow circle bottom),0 5 8 14
+(small yellow circle left),0 5 8 15
+(small yellow circle right),0 5 8 16
+(small yellow square top),0 5 9 12
+(small yellow square middle),0 5 9 13
+(small yellow square bottom),0 5 9 14
+(small yellow square left),0 5 9 15
+(small yellow square right),0 5 9 16
+(small yellow triangle top),0 5 10 12
+(small yellow triangle middle),0 5 10 13
+(small yellow triangle bottom),0 5 10 14
+(small yellow triangle left),0 5 10 15
+(small yellow triangle right),0 5 10 16
+(small yellow pentagon top),0 5 11 12
+(small yellow pentagon middle),0 5 11 13
+(small yellow pentagon bottom),0 5 11 14
+(small yellow pentagon left),0 5 11 15
+(small yellow pentagon right),0 5 11 16
+(small green circle top),0 6 8 12
+(small green circle middle),0 6 8 13
+(small green circle bottom),0 6 8 14
+(small green circle left),0 6 8 15
+(small green circle right),0 6 8 16
+(small green square top),0 6 9 12
+(small green square middle),0 6 9 13
+(small green square bottom),0 6 9 14
+(small green square left),0 6 9 15
+(small green square right),0 6 9 16
+(small green triangle top),0 6 10 12
+(small green triangle middle),0 6 10 13
+(small green triangle bottom),0 6 10 14
+(small green triangle left),0 6 10 15
+(small green triangle right),0 6 10 16
+(small green pentagon top),0 6 11 12
+(small green pentagon middle),0 6 11 13
+(small green pentagon bottom),0 6 11 14
+(small green pentagon left),0 6 11 15
+(small green pentagon right),0 6 11 16
+(small blue circle top),0 7 8 12
+(small blue circle middle),0 7 8 13
+(small blue circle bottom),0 7 8 14
+(small blue circle left),0 7 8 15
+(small blue circle right),0 7 8 16
+(small blue square top),0 7 9 12
+(small blue square middle),0 7 9 13
+(small blue square bottom),0 7 9 14
+(small blue square left),0 7 9 15
+(small blue square right),0 7 9 16
+(small blue triangle top),0 7 10 12
+(small blue triangle middle),0 7 10 13
+(small blue triangle bottom),0 7 10 14
+(small blue triangle left),0 7 10 15
+(small blue triangle right),0 7 10 16
+(small blue pentagon top),0 7 11 12
+(small blue pentagon middle),0 7 11 13
+(small blue pentagon bottom),0 7 11 14
+(small blue pentagon left),0 7 11 15
+(small blue pentagon right),0 7 11 16
+(medium red circle top),1 3 8 12
+(medium red circle middle),1 3 8 13
+(medium red circle bottom),1 3 8 14
+(medium red circle left),1 3 8 15
+(medium red circle right),1 3 8 16
+(medium red square top),1 3 9 12
+(medium red square middle),1 3 9 13
+(medium red square bottom),1 3 9 14
+(medium red square left),1 3 9 15
+(medium red square right),1 3 9 16
+(medium red triangle top),1 3 10 12
+(medium red triangle middle),1 3 10 13
+(medium red triangle bottom),1 3 10 14
+(medium red triangle left),1 3 10 15
+(medium red triangle right),1 3 10 16
+(medium red pentagon top),1 3 11 12
+(medium red pentagon middle),1 3 11 13
+(medium red pentagon bottom),1 3 11 14
+(medium red pentagon left),1 3 11 15
+(medium red pentagon right),1 3 11 16
+(medium orange circle top),1 4 8 12
+(medium orange circle middle),1 4 8 13
+(medium orange circle bottom),1 4 8 14
+(medium orange circle left),1 4 8 15
+(medium orange circle right),1 4 8 16
+(medium orange square top),1 4 9 12
+(medium orange square middle),1 4 9 13
+(medium orange square bottom),1 4 9 14
+(medium orange square left),1 4 9 15
+(medium orange square right),1 4 9 16
+(medium orange triangle top),1 4 10 12
+(medium orange triangle middle),1 4 10 13
+(medium orange triangle bottom),1 4 10 14
+(medium orange triangle left),1 4 10 15
+(medium orange triangle right),1 4 10 16
+(medium orange pentagon top),1 4 11 12
+(medium orange pentagon middle),1 4 11 13
+(medium orange pentagon bottom),1 4 11 14
+(medium orange pentagon left),1 4 11 15
+(medium orange pentagon right),1 4 11 16
+(medium yellow circle top),1 5 8 12
+(medium yellow circle middle),1 5 8 13
+(medium yellow circle bottom),1 5 8 14
+(medium yellow circle left),1 5 8 15
+(medium yellow circle right),1 5 8 16
+(medium yellow square top),1 5 9 12
+(medium yellow square middle),1 5 9 13
+(medium yellow square bottom),1 5 9 14
+(medium yellow square left),1 5 9 15
+(medium yellow square right),1 5 9 16
+(medium yellow triangle top),1 5 10 12
+(medium yellow triangle middle),1 5 10 13
+(medium yellow triangle bottom),1 5 10 14
+(medium yellow triangle left),1 5 10 15
+(medium yellow triangle right),1 5 10 16
+(medium yellow pentagon top),1 5 11 12
+(medium yellow pentagon middle),1 5 11 13
+(medium yellow pentagon bottom),1 5 11 14
+(medium yellow pentagon left),1 5 11 15
+(medium yellow pentagon right),1 5 11 16
+(medium green circle top),1 6 8 12
+(medium green circle middle),1 6 8 13
+(medium green circle bottom),1 6 8 14
+(medium green circle left),1 6 8 15
+(medium green circle right),1 6 8 16
+(medium green square top),1 6 9 12
+(medium green square middle),1 6 9 13
+(medium green square bottom),1 6 9 14
+(medium green square left),1 6 9 15
+(medium green square right),1 6 9 16
+(medium green triangle top),1 6 10 12
+(medium green triangle middle),1 6 10 13
+(medium green triangle bottom),1 6 10 14
+(medium green triangle left),1 6 10 15
+(medium green triangle right),1 6 10 16
+(medium green pentagon top),1 6 11 12
+(medium green pentagon middle),1 6 11 13
+(medium green pentagon bottom),1 6 11 14
+(medium green pentagon left),1 6 11 15
+(medium green pentagon right),1 6 11 16
+(medium blue circle top),1 7 8 12
+(medium blue circle middle),1 7 8 13
+(medium blue circle bottom),1 7 8 14
+(medium blue circle left),1 7 8 15
+(medium blue circle right),1 7 8 16
+(medium blue square top),1 7 9 12
+(medium blue square middle),1 7 9 13
+(medium blue square bottom),1 7 9 14
+(medium blue square left),1 7 9 15
+(medium blue square right),1 7 9 16
+(medium blue triangle top),1 7 10 12
+(medium blue triangle middle),1 7 10 13
+(medium blue triangle bottom),1 7 10 14
+(medium blue triangle left),1 7 10 15
+(medium blue triangle right),1 7 10 16
+(medium blue pentagon top),1 7 11 12
+(medium blue pentagon middle),1 7 11 13
+(medium blue pentagon bottom),1 7 11 14
+(medium blue pentagon left),1 7 11 15
+(medium blue pentagon right),1 7 11 16
+(large red circle top),2 3 8 12
+(large red circle middle),2 3 8 13
+(large red circle bottom),2 3 8 14
+(large red circle left),2 3 8 15
+(large red circle right),2 3 8 16
+(large red square top),2 3 9 12
+(large red square middle),2 3 9 13
+(large red square bottom),2 3 9 14
+(large red square left),2 3 9 15
+(large red square right),2 3 9 16
+(large red triangle top),2 3 10 12
+(large red triangle middle),2 3 10 13
+(large red triangle bottom),2 3 10 14
+(large red triangle left),2 3 10 15
+(large red triangle right),2 3 10 16
+(large red pentagon top),2 3 11 12
+(large red pentagon middle),2 3 11 13
+(large red pentagon bottom),2 3 11 14
+(large red pentagon left),2 3 11 15
+(large red pentagon right),2 3 11 16
+(large orange circle top),2 4 8 12
+(large orange circle middle),2 4 8 13
+(large orange circle bottom),2 4 8 14
+(large orange circle left),2 4 8 15
+(large orange circle right),2 4 8 16
+(large orange square top),2 4 9 12
+(large orange square middle),2 4 9 13
+(large orange square bottom),2 4 9 14
+(large orange square left),2 4 9 15
+(large orange square right),2 4 9 16
+(large orange triangle top),2 4 10 12
+(large orange triangle middle),2 4 10 13
+(large orange triangle bottom),2 4 10 14
+(large orange triangle left),2 4 10 15
+(large orange triangle right),2 4 10 16
+(large orange pentagon top),2 4 11 12
+(large orange pentagon middle),2 4 11 13
+(large orange pentagon bottom),2 4 11 14
+(large orange pentagon left),2 4 11 15
+(large orange pentagon right),2 4 11 16
+(large yellow circle top),2 5 8 12
+(large yellow circle middle),2 5 8 13
+(large yellow circle bottom),2 5 8 14
+(large yellow circle left),2 5 8 15
+(large yellow circle right),2 5 8 16
+(large yellow square top),2 5 9 12
+(large yellow square middle),2 5 9 13
+(large yellow square bottom),2 5 9 14
+(large yellow square left),2 5 9 15
+(large yellow square right),2 5 9 16
+(large yellow triangle top),2 5 10 12
+(large yellow triangle middle),2 5 10 13
+(large yellow triangle bottom),2 5 10 14
+(large yellow triangle left),2 5 10 15
+(large yellow triangle right),2 5 10 16
+(large yellow pentagon top),2 5 11 12
+(large yellow pentagon middle),2 5 11 13
+(large yellow pentagon bottom),2 5 11 14
+(large yellow pentagon left),2 5 11 15
+(large yellow pentagon right),2 5 11 16
+(large green circle top),2 6 8 12
+(large green circle middle),2 6 8 13
+(large green circle bottom),2 6 8 14
+(large green circle left),2 6 8 15
+(large green circle right),2 6 8 16
+(large green square top),2 6 9 12
+(large green square middle),2 6 9 13
+(large green square bottom),2 6 9 14
+(large green square left),2 6 9 15
+(large green square right),2 6 9 16
+(large green triangle top),2 6 10 12
+(large green triangle middle),2 6 10 13
+(large green triangle bottom),2 6 10 14
+(large green triangle left),2 6 10 15
+(large green triangle right),2 6 10 16
+(large green pentagon top),2 6 11 12
+(large green pentagon middle),2 6 11 13
+(large green pentagon bottom),2 6 11 14
+(large green pentagon left),2 6 11 15
+(large green pentagon right),2 6 11 16
+(large blue circle top),2 7 8 12
+(large blue circle middle),2 7 8 13
+(large blue circle bottom),2 7 8 14
+(large blue circle left),2 7 8 15
+(large blue circle right),2 7 8 16
+(large blue square top),2 7 9 12
+(large blue square middle),2 7 9 13
+(large blue square bottom),2 7 9 14
+(large blue square left),2 7 9 15
+(large blue square right),2 7 9 16
+(large blue triangle top),2 7 10 12
+(large blue triangle middle),2 7 10 13
+(large blue triangle bottom),2 7 10 14
+(large blue triangle left),2 7 10 15
+(large blue triangle right),2 7 10 16
+(large blue pentagon top),2 7 11 12
+(large blue pentagon middle),2 7 11 13
+(large blue pentagon bottom),2 7 11 14
+(large blue pentagon left),2 7 11 15
+(large blue pentagon right),2 7 11 16

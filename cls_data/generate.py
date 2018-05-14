@@ -8,15 +8,21 @@ np.random.seed(0)
 
 ATTRIBUTES = [
     ['small', 'medium', 'large'],
-    ['red', 'yellow', 'green', 'blue'],
-    ['circle', 'square', 'triangle'],
+    ['red', 'orange', 'yellow', 'green', 'blue'],
+    ['circle', 'square', 'triangle', 'pentagon'],
+    #['solid', 'dashed', 'dotted'],
+    ['top', 'middle', 'bottom', 'left', 'right']
 ]
 
 LITERALS = ['true', 'false']
 
-UNARIES = ['not']
+#UNARIES = ['not']
+UNARIES = []
 
-BINARIES = ['and', 'or']
+NARIES = ['and', 'or']
+#BINARIES = []
+
+MAX_DEPTH = 2
 
 def things():
     for group in it.product(*ATTRIBUTES):
@@ -34,12 +40,16 @@ def lfs(depth):
             for d in range(1, depth):
                 for lf in lfs(d):
                     yield (unary, lf)
-        for binary in BINARIES:
-            for d1 in range(1, depth):
-                for d2 in range(1, d1+1):
-                    for lf1 in lfs(d1):
-                        for lf2 in lfs(d2):
-                            yield (binary, lf1, lf2)
+        #for binary in BINARIES:
+        for nary in NARIES:
+            available_depths = range(1, depth)
+            for depths in it.chain(
+                    it.product(available_depths, repeat=2),
+                    it.product(available_depths, repeat=3)):
+                depths = list(depths)
+                gen_lfs = [lfs(d) for d in depths]
+                for lf_group in it.product(*gen_lfs):
+                    yield (nary,) + lf_group
 
 def evaluate(lf, thing):
     if isinstance(lf, tuple):
@@ -71,15 +81,21 @@ def pp(lf):
     else:
         return lf
 
+base_lfs = it.chain(*(lfs(d) for d in range(1, MAX_DEPTH+1)))
+all_lfs = it.chain(*([lf, ('not', lf)] for lf in base_lfs))
+
 things = list(things())
 groups = defaultdict(list)
-for depth in range(1, 4):
-    for lf in lfs(depth):
-        sig = tuple(int(evaluate(lf, thing)) for thing in things)
-        groups[sig].append(lf)
+#for depth in range(1, MAX_DEPTH+1):
+#    for lf in lfs(depth):
+#        sig = tuple(int(evaluate(lf, thing)) for thing in things)
+#        groups[sig].append(lf)
+for lf in all_lfs:
+    sig = tuple(int(evaluate(lf, thing)) for thing in things)
+    groups[sig].append(lf)
 
 labeled = {k: min(v, key=size) for k, v in groups.items()}
-labeled = {k: labeled[k] for k in sorted(labeled.keys())}
+labeled = {k: labeled[k] for k in sorted(labeled.keys(), key=sum)}
 
 attr_vocab = {}
 for attr_group in ATTRIBUTES:
@@ -100,9 +116,12 @@ with open('vocab.txt', 'w') as fh:
 
 ids = list(range(len(labeled)))
 np.random.shuffle(ids)
-train_ids = ids[:2450]
-val_ids = ids[2450:2700]
-test_ids = ids[2700:]
+#train_ids = ids[:2450]
+#val_ids = ids[2450:2700]
+#test_ids = ids[2700:]
+train_ids = ids[:1500]
+val_ids = ids[1500:2000]
+test_ids = ids[2000:]
 
 for name, ids in [
         ('train_ids.txt', train_ids), ('val_ids.txt', val_ids),

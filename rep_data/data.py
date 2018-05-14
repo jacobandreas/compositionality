@@ -7,10 +7,11 @@ Batch = namedtuple('Batch', ('tgt', 'ctx'))
 CompBatch = namedtuple('CompBatch', ('bi', 'uni1', 'uni2'))
 
 class Dataset(object):
-    def __init__(self):
+    def __init__(self, ctx):
+        prefix = 'rep_data/ctx_%d/' % ctx
         vocab = {}
         rev_vocab = {}
-        with open('data/vocab.txt') as fh:
+        with open(prefix + 'vocab.txt') as fh:
             for line in fh:
                 word, id = line.rsplit(',', 1)
                 id = int(id)
@@ -19,17 +20,17 @@ class Dataset(object):
             self._vocab = vocab
             self._rev_vocab = rev_vocab
 
-        uni_tgt = np.load('data/uni_tgt.npy')
-        uni_ctx = np.load('data/uni_ctx.npy')
-        bi_tgt = np.load('data/bi_tgt.npy')
-        bi_ctx = np.load('data/bi_ctx.npy')
+        uni_tgt = np.load(prefix + 'uni_tgt.npy')
+        uni_ctx = np.load(prefix + 'uni_ctx.npy')
+        bi_tgt = np.load(prefix + 'bi_tgt.npy')
+        bi_ctx = np.load(prefix + 'bi_ctx.npy')
         self._tgt = np.concatenate((uni_tgt, bi_tgt))
         self._ctx = np.concatenate((uni_ctx, bi_ctx))
 
         bis = []
         uni1s = []
         uni2s = []
-        with open('data/bigrams.txt') as fh:
+        with open(prefix + 'bigrams.txt') as fh:
             for line in fh:
                 bi, uni1, uni2 = (int(i) for i in line.split(','))
                 bis.append(bi)
