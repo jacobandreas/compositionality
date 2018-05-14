@@ -71,6 +71,7 @@ class Dataset(object):
         m2 /= count
         self._mean = m1
         self._std = np.sqrt(m2 - m1 ** 2)
+        print('loaded dataset')
 
     def get_train_batch(self, n_batch):
         batch_ids = np.random.choice(self._train_ids, size=n_batch)
